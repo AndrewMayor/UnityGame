@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 1423313852}
   - component: {fileID: 1423313851}
   - component: {fileID: 1423313854}
+  - component: {fileID: 1423313855}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -655,6 +656,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 0
   m_AspectRatio: 2.3611112
+--- !u!114 &1423313855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423313849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dbb325967a03e4a84b7fc60061d6f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1649244125
 GameObject:
   m_ObjectHideFlags: 0
