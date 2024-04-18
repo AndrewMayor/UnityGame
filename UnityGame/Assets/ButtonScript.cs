@@ -10,7 +10,15 @@ public class ButtonScript : MonoBehaviour
     void Start()
     {
         Button btn = GetComponent<Button>();
-        btn.onClick.AddListener(() => SceneManager.LoadScene("Game"));
+        
+        IEnumerator loadScene(){
+            AsyncOperation loading = SceneManager.LoadSceneAsync("game");
+            while (!loading.isDone){
+                yield return null;
+            }
+        }
+    
+        btn.onClick.AddListener(() => StartCoroutine(loadScene()));
     }
 
     // Update is called once per frame
